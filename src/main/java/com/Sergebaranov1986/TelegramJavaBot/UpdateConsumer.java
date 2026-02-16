@@ -53,6 +53,9 @@ public class UpdateConsumer implements LongPollingSingleThreadUpdateConsumer {
             else if (messageText.equals("Picture")) {
                 sendImage(chatId);
             }
+            else if (messageText.equals("Random")) {
+                sendRandom(chatId);
+            }
             else {
                 sendMessage(chatId, "I dont understand");
 
